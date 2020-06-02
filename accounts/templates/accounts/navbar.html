@@ -1,0 +1,23 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+ <h3 style="color:black;padding:5px; font-size:40px">CRM <span style="color:white">Services</span></h3>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'products' %}">Products</a>
+      </li>
+        <div style="margin-left:600px">
+            <li class="nav-item">
+                <button class="btn btn-dark">{{date}}</button>
+           </li>
+        </div>
+    </ul>
+  </div>
+</nav>

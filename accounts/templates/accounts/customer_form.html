@@ -1,0 +1,26 @@
+{%  extends 'accounts/main.html' %}
+
+{% block content %}
+<div class="container row">
+	<div class="col-6">
+<h3>Update Customer</h3>
+<hr>
+<form class="form-block" action="" method="POST">
+    {% csrf_token %}
+
+	<label>Name:</label>
+	        {{form.name}}
+<hr>
+    <label>Phone:</label>
+			{{form.phone}}
+<hr>
+	<label>Email:</label>
+			 {{form.email}}
+	<hr>
+	<input type="submit" name="Submit">
+
+</form>
+		</div>
+</div>
+
+{% endblock %}
